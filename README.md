@@ -9,45 +9,43 @@
 
 ## Conflicts
 
-In the previous lab, we discussed editing the same file online and on your local copy. This simulates having two people editing the same file/repository.  At some point, conflicts may occur.
+In the previous lab, we discussed editing the same file online and in your local repository. This simulates having two people editing the same file/repository.  At some point, conflicts may occur.
 
 From this point on, you will be working with a partner. Both of you will be working on the same repository. You will be referred to as `first` and `second` team member. 
 
 __Both team members__: 
 
-We will work on the files in this repository to practice resolving conflicts. The files describe a simple `Die` class. The class is not complete. We will complete it in this lab.
+You will be working on files in the repository to practice resolving conflicts. You will be createing a class header, class implementation, a driver, and a Makefile. You will be testing a class called `Die`. 
 
-1. `first`: create a repository on GitHub called `first-lab` with a `README.md` and a `.gitignore` file for C++. Add Second team member as a collaborator.
-2. Each team member: Clone this repository on your system. You will be recording your answers in `first-answers.md` and `second-answers.md`.
+1. `first`: Create a repository on GitHub called `die-class` with a `README.md` and a `.gitignore` file for C++.
+2. Add `second` team member as a collaborator. You will need their GitHub user name.
+3. Each team member: Clone `die-class` repository on your system. You will be recording your answers in `first-answers.md` and `second-answers.md`.
    
-3. `first`: Create your answers file `first-answers.md`, add, and commit it.
-4. `second`: Create your answers file `second-answers.md`, add, and commit it.
-5. `first`: Edit the `README.md` file by adding the following lines:
+4. `first`: Create your answers file `first-answers.md`, add, and commit it.
+5. `second`: Create your answers file `second-answers.md`, add, and commit it.
+6. `first`: Erase the content of the `README.md` file and add the following lines at the top of the file (lines 1 and 2):
    ```markdown
    # Git Lab #2
    ## First team member: <Enter your name here>
    ```
-6. `first`: Add, commit, and push your changes to GitHub.
+7. `first`: Add, commit, and push your changes to GitHub.
    
-7. `second`: Edit the `README.md` file by adding the following lines:
+8. `second`: Erase the content of the `README.md` file and add the following lines at the top of the file (lines 1 and 2):
    ```markdown
    # The second Git Lab
    ## Second team member: <Enter your name here>
    ```
-8. `second`: Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
-9.  Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
-10. Issue the command: `git pull`
-11. Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`
-12. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
-13. Your repo
+9. `second`: Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
+10. `seconde:` Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
+11. `second:` Issue the command: `git pull`
+12. `second:` Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`
+13. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
 14. `second`: Open the `README.md` file. You should see something similar to the following:
-   ```
+   ```markdown
    <<<<<<< HEAD
-   # The second Git lab
-   ## Second team member: second name
+   <your changes here>
    =======
-   # Git Lab #2
-   ## First team member: first name
+   <your partner's changes here>
    >>>>>>> a10ec650cc73b85f41e37559df7fc6cb3affcac6
    ```
    Git separates your changes (between `<<<<<<< HEAD` and `=======`) from your teammate's changes(between `=======` and `>>>>>>>`). You job at this point is resolve this conflict by editing the file and make the appropriate changes. Modify the text to the following:
@@ -57,7 +55,36 @@ We will work on the files in this repository to practice resolving conflicts. Th
    ## Second team member: second name
    ```
 
-11. Repeat steps `3-10` above by reversing the roles. Edit line 4 instead. Record `Answers 3 & 4`
+15. `second`: Edit the `README.md` file by adding the following line (line 4):
+    ```markdown
+    This repository is an example of a C++ project.
+    ```
+    Add, commit, and push your changes.
+
+16. `first`: Make sure `second` is done with step 11 first then edit the `README.md` file by adding the following line (line 4):
+     ```markdown
+    Die class project. Simulates a die and includes a driver program and a Makefile. 
+    ```
+    Add, commit, and push your changes to GitHub. Record the error as your Answer to Qustion 1.
+17. `first`: Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
+18. `first`: Issue the command: `git pull`
+19. `first`: Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`
+20. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
+21. `first`: Open the `README.md` file. You should see something similar to the following:
+   ```markdown
+   <<<<<<< HEAD
+   <Your changes here>
+   =======
+   <your partner's changes here>
+   >>>>>>> a10ec650cc73b85f41e37559df7fc6cb3affcac6
+   ```
+   Git separates your changes (between `<<<<<<< HEAD` and `=======`) from your teammate's changes(between `=======` and `>>>>>>>`). You job at this point is resolve this conflict by editing the file and make the appropriate changes. Modify the text to the following:
+   ```
+   # The second Git lab
+   ## First team member: first name
+   ## Second team member: second name
+   ### Die Project: simulates the rolling of a die with certain number of sides.
+   ```
 
 ## Branching & Pull Requests
 The main repository is called the `master` branch. Whe working with teams, you want to avoid working directly on the master branch. It is better to work on a copy of the repository and merge it with the master branch. First, you will work on your repository using a separate branch and merge it with the master. Second, we you will work on a separate branch and have your teammate review your changes before merging (`pull request`).
@@ -93,14 +120,14 @@ The main repository is called the `master` branch. Whe working with teams, you w
        /**
         * Die constructor:
         * Seed the random number generator, set the number of sides
-        * to 6, and assign a random value (1-numsides) to faceValue
+        * to 6, and assign a random value (1-numSides) to faceValue
         */
        Die();
 
        /**
         * Die constructor:
         * Seed the random number generator, set the number of sides
-        * to newNumSides, and assign a random value (1-numsides) to faceValue
+        * to newNumSides, and assign a random value (1-numSides) to faceValue
         */
        Die(int newNumSides);
 
@@ -117,7 +144,7 @@ The main repository is called the `master` branch. Whe working with teams, you w
        int getNumSides();
 
        /**
-        * setNumSides: change the number of the die sides and ignore it if invalie
+        * setNumSides: change the number of the die sides and ignore it if invalid
         * @param newNumSides
         */
        void setNumSides(int newNumSides);
@@ -252,10 +279,10 @@ int main() {
 }
 ```
 Add your name, date, and a brief description at the top of the program.
-2. Add and commit your changes. You should have a new branch with the new file added.
-3. Push your branch to GitHub.
-4. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
-5. Do not delete the branch when you're done.
+3. Add and commit your changes. You should have a new branch with the new file added.
+4. Push your branch to GitHub.
+5. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
+6. Do not delete the branch when you're done.
 
 `second`: 
 
@@ -289,16 +316,18 @@ clean:
 ```
 
 Add your name and date at the top of the program.
-2. Add and commit your changes. You should have a new branch with the new file added.
-3. Push your branch to GitHub.
-4. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
-5. Do not delete the branch when you're done.
+2. Test your program by running the `make` command and running `a.out`.
+
+3. Add and commit your changes. You should have a new branch with the new file added.
+4. Push your branch to GitHub.
+5. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
+6. Do not delete the branch when you're done.
 
 __That's it. You just experienced the most common workflow used today__
 
 ### Submission
 
-Submit a link to your shared repository on GitHub.
+__Submit a link to your shared repository on GitHub.__
 
 
 
