@@ -36,11 +36,11 @@ You will be working on files in the repository to practice resolving conflicts. 
    ## Second team member: <Enter your name here>
    ```
 9. `second`: Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
-10. `seconde:` Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
-11. `second:` Issue the command: `git pull`
-12. `second:` Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`
-13. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
-14. `second`: Open the `README.md` file. You should see something similar to the following:
+Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
+10. `second:` Issue the command: `git pull`
+11. `second:` Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`
+You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
+12. `second`: Open the `README.md` file. You should see something similar to the following:
    ```markdown
    <<<<<<< HEAD
    <your changes here>
