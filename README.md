@@ -90,21 +90,23 @@ __At this point both teammates should have the same content on on their local re
 The main repository is called the `master` branch. Whe working with teams, you want to avoid working directly on the master branch. It is better to work on a copy of the repository and merge it with the master branch. First, you will work on your repository using a separate branch and merge it with the master. Second, we you will work on a separate branch and have your teammate review your changes before merging (`pull request`).
 
 ### Branching
-**The following steps must be done by both `first`**
+**The following steps must be done by `first`**
 1. List current branches by issuing the command `git branch`. Record the results as your `Answer to question 5`
 2. Create a new branch and make it the current branch.
    ```console
    git branch header
    git checkout header
-   or
+   ```
+   Or create a new branch and switch to it using the command:
+   ```console
    git checkout -b header
    ```
 3. List current branches
-   ```
+   ```console
    git branch
    ```
    Record the command output of `git branch` as your `Answer to question 6`
-   > Note: current branch is marked with `*`
+   > Note: current branch is marked with __`*`__
 
 4. Now you are working with branch `header`. Add a file called `die.h`, add the following code, and save it.
    ```cpp
@@ -175,7 +177,7 @@ The main repository is called the `master` branch. Whe working with teams, you w
    git branch master
    ```
 8. Issue the `ls` command again and record all file names as your `Answer to question 7`.
-9. Is your header file in the `master` branch?
+9. Is your header file in the `master` branch? Record your `Answer to question 7`
 10. Let's merge the changes we made in the `header` branch into the `master` branch. First make sure you are in the master branch before merging.
 ```console
 git checkout master
@@ -186,7 +188,7 @@ git merge header
 
 **The following steps must be done by both `second`**
 
-Repeat the steps above `1-12`. Name your branch `imp` and add the file `die.cc` with the following content:
+Repeat the __Branching__ steps above `1-12`. Name your branch `imp` and add the file `die.cc` with the following content:
 ```cpp
 #include <iostream>
 #include <fstream>
@@ -240,14 +242,18 @@ ostream& operator <<(ostream &out, const Die &d){
     return out;
 }
 ```
-__Both teammates__: Make sure you have no conflicts and both or your changes are posted on GitHub.
+__Both teammates__: Make sure you have no conflicts and both of your changes are posted on GitHub. All local and online repositories should be synched at this point.
+
+The above workflow assumes does not work when your teammate's input is required to approve the changes. In other words, this workflow works best if you don't have a partner.
+
+In the next section, we will addres another workflow where each partner has to approve and comment on changes made to the repository. This a more realistic approach to team work. We will do this using __pull requests__.
 
 ### Pull Requests
 
-In this workflow, each team member will modify the code (using a separate branch) and ask the other team member to review it and merge it to the `master` branch. The process works by first creating a new branch, adding/modifying the code, uploading the branch to GitHub, and creating a `pull request`. A `pull request` is our way of saying: we made modifications that should be added to the software and would like the code to be pulled into the master branch. A `pull request` is then reviewed, discussed, and either rejected or merged into the `master` branch of the code. 
+In this workflow, each team member will modify the code (using a separate branch) and ask the other team member to review it and merge it to the `master` branch. The process works by first creating a new branch, adding/modifying the code, uploading the branch to GitHub, and creating a `pull request`. A `pull request` is our way of saying: we made modifications that should be added to the software and would like the code to be pulled into the master branch. A `pull request` is then reviewed, discussed, and either rejected or merged into the `master` branch of the code. It is a bad idea to merge your own pull requests. Always, have someone else review it and merge it.
 
 This is a very common workflow for teams working on the same repository.
-
+![pull-request.jpg](pull-request.jpg)
 `first`: 
 1. Open a terminal window and cd to your repository on your machine. Create a new branch and name it `driver`. You will create a driver program called `die-main.cc`. 
 2. Make sure that you are editing the `driver` branch by issuing the command `git branch`
