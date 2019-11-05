@@ -325,12 +325,22 @@ die-main.o: die-main.cc die.h
 clean:
 	rm -f die-main.o die.o die-main
 ```
+
 3. Add your name and date at the top of the program.
 4. Test your program by running the `make` command and running `a.out`.
 5. Add and commit your changes. You should have a new branch with the new file added.
 6. Push your branch to GitHub.
 7. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
 8. Do not delete the branch when you're done.
+
+### Workflow Summary:
+
+- Create a repository for every project
+- Create a branch for every feature
+- Create a pull request for the feature's branch
+- Have your team review the pull request and comment on it
+  - At this point the feature can be accepted, rejected, or recommended for modification
+- Have a team member (other than the author) merge the pull request
 
 __That's it. You just experienced the most common development workflow used today.__
 
