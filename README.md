@@ -326,12 +326,12 @@ clean:
 	rm -f die-main.o die.o die-main
 ```
 
-Add your name and date at the top of the program.
-3. Test your program by running the `make` command and running `a.out`.
-4. Add and commit your changes. You should have a new branch with the new file added.
-5. Push your branch to GitHub.
-6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
-7. Do not delete the branch when you're done.
+1. Add your name and date at the top of the program.
+2. Test your program by running the `make` command and running `a.out`.
+3. Add and commit your changes. You should have a new branch with the new file added.
+4. Push your branch to GitHub.
+5. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
+6. Do not delete the branch when you're done.
 
 __That's it. You just experienced the most common development workflow used today.__
 
