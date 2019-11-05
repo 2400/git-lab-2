@@ -24,14 +24,14 @@ You will be working on files in the repository to practice resolving conflicts. 
 4. `first`: Create your answers file `first-answers.md`, add, and commit it.
 5. `second`: Create your answers file `second-answers.md`, add, and commit it.
 6. `first`: Erase the content of the `README.md` file and add the following lines at the top of the file (lines 1 and 2):
-   ```markdown
+   ```
    # Git Lab #2
    ## First team member: <Enter your name here>
    ```
 7. `first`: Add, commit, and push your changes to GitHub.
    
-8. `second`: Erase the content of the `README.md` file and add the following lines at the top of the file (lines 1 and 2):
-   ```markdown
+8. `second`: Make sure `first` is done with the previous step. Erase the content of the `README.md` file and add the following lines at the top of the file (lines 1 and 2):
+   ```
    # The second Git Lab
    ## Second team member: <Enter your name here>
    ```
