@@ -254,6 +254,8 @@ In this workflow, each team member will modify the code (using a separate branch
 
 This is a very common workflow for teams working on the same repository.
 ![pull-request.jpg](pull-request.jpg)
+You can find more information about GitHub workflow [here](https://guides.github.com/introduction/flow/).
+
 `first`: 
 1. Open a terminal window and cd to your repository on your machine. Create a new branch and name it `driver`. You will create a driver program called `die-main.cc`. 
 2. Make sure that you are editing the `driver` branch by issuing the command `git branch`
@@ -285,16 +287,19 @@ int main() {
 }
 ```
 Add your name, date, and a brief description at the top of the program.
-3. Add and commit your changes. You should have a new branch with the new file added.
-4. Push your branch to GitHub.
-5. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
-6. Do not delete the branch when you're done.
+
+4. Add and commit your changes. You should have a new branch with the new file added.
+5. Push your branch to GitHub.
+6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
+7. Do not delete the branch when you're done.
 
 `second`: 
 
  Open a terminal window and cd to your repository on your machine. Create a new branch and name it `make`. You will create a file called `Makefile`. 
-2. Make sure that you are editing the `make` branch by issuing the command `git branch`
-3. Add the following lines of code inside `Makefile`:
+1. Make sure that you are editing the `make` branch by issuing the command `git branch`
+   
+2. Add the following lines of code inside `Makefile`:
+   
 ```Makefile
 # Author: <Enter your name>
 #   Date: <Enter the date>
@@ -322,14 +327,13 @@ clean:
 ```
 
 Add your name and date at the top of the program.
-2. Test your program by running the `make` command and running `a.out`.
+3. Test your program by running the `make` command and running `a.out`.
+4. Add and commit your changes. You should have a new branch with the new file added.
+5. Push your branch to GitHub.
+6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
+7. Do not delete the branch when you're done.
 
-3. Add and commit your changes. You should have a new branch with the new file added.
-4. Push your branch to GitHub.
-5. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
-6. Do not delete the branch when you're done.
-
-__That's it. You just experienced the most common workflow used today__
+__That's it. You just experienced the most common development workflow used today.__
 
 ### Submission
 
