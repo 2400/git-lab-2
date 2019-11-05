@@ -53,24 +53,20 @@ You just experienced a conflict. A conflict happens when both collaborators edit
    # The second Git lab
    ## First team member: first name
    ## Second team member: second name
+   This repository is an example of a C++ project.
    ```
 
-15. `second`: Edit the `README.md` file by adding the following line (line 4):
-    ```markdown
-    This repository is an example of a C++ project.
-    ```
-    Add, commit, and push your changes.
+   Add, commit, and push your changes.
 
-16. `first`: Make sure `second` is done with step 11 first then edit the `README.md` file by adding the following line (line 4):
+13. `first`: Make sure `second` is done with the previous step then edit the `README.md` file by adding the following line (line 4) to `README.md`:
      ```markdown
     Die class project. Simulates a die and includes a driver program and a Makefile. 
     ```
     Add, commit, and push your changes to GitHub. Record the error as your Answer to Qustion 1.
-17. `first`: Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
-18. `first`: Issue the command: `git pull`
-19. `first`: Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`
-20. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
-21. `first`: Open the `README.md` file. You should see something similar to the following:
+14. `first`: Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
+15. `first`: Issue the command: `git pull`
+16. `first`: Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
+17. `first`: Open the `README.md` file. You should see something similar to the following:
    ```markdown
    <<<<<<< HEAD
    <Your changes here>
@@ -85,6 +81,10 @@ You just experienced a conflict. A conflict happens when both collaborators edit
    ## Second team member: second name
    ### Die Project: simulates the rolling of a die with certain number of sides.
    ```
+18. Add, commit, and push your changes to GitHub.
+19. `second`: Make sure `first` is done with the previous command and `git pull` the changes to your local repository.
+    
+__At this point both teammates should have the same content on on their local repositories and on GitHub. Check the repositories contents before proceeding the next step.__
 
 ## Branching & Pull Requests
 The main repository is called the `master` branch. Whe working with teams, you want to avoid working directly on the master branch. It is better to work on a copy of the repository and merge it with the master branch. First, you will work on your repository using a separate branch and merge it with the master. Second, we you will work on a separate branch and have your teammate review your changes before merging (`pull request`).
