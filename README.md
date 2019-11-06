@@ -5,21 +5,21 @@
 
 **You must complete the [first lab](https://github.com/2400/git-lab) prior to attempting this lab.**
 
- 
+----
 
 ## Conflicts
 
-In the previous lab, we discussed editing the same file online and in your local repository. This simulates having two people editing the same file/repository.  At some point, conflicts may occur.
+In the previous lab, we discussed editing the same file online and in your local repository. This simulates having two people editing the same file/repository.  At some point, conflicts may occur. Conflicts occur when two developers edit the same content (same lines of code).
 
-From this point on, you will be working with a partner. Both of you will be working on the same repository. You will be referred to as `first` and `second` team member. 
+From this point on, you will be working with a partner. Both of you will be working on the same repository. You will be referred to as `first` and `second` team member.
 
-__Both team members__: 
+__Both team members__:
 
-You will be working on files in the repository to practice resolving conflicts. You will be createing a class header, class implementation, a driver, and a Makefile. You will be testing a class called `Die`. 
+You will be working on files in the same repository to practice resolving conflicts. You will be createing a `die class` project that includes a class header, a class implementation, a driver, and a Makefile. The `Die` class will simulates an `n-sided` die.
 
 1. `first`: Create a repository on GitHub called `die-class` with a `README.md` and a `.gitignore` file for C++.
 2. Add `second` team member as a collaborator. You will need their GitHub user name.
-3. Each team member: Clone `die-class` repository on your system. You will be recording your answers in `first-answers.md` and `second-answers.md`.
+3. Both team members: Clone `die-class` repository on your system. You will be recording your answers in `first-answers.md` and `second-answers.md`.
    
 4. `first`: Create your answers file `first-answers.md`, add, and commit it.
 5. `second`: Create your answers file `second-answers.md`, add, and commit it.
@@ -38,9 +38,9 @@ You will be working on files in the repository to practice resolving conflicts. 
 9. `second`: Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
 Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
 10. `second:` Issue the command: `git pull`
-11. `second:` Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`
-You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
-12. `second`: Open the `README.md` file. You should see something similar to the following:
+11. `second:` Issue the `git push` command again. Was there a conflict reported?Copy the output of the command as your `Answer to question 2`. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
+
+12. `second`: Open the `README.md` file in your favorite editor. You should see something similar to the following:
    ```markdown
    <<<<<<< HEAD
    <your changes here>
@@ -50,7 +50,7 @@ You just experienced a conflict. A conflict happens when both collaborators edit
    ```
    Git separates your changes (between `<<<<<<< HEAD` and `=======`) from your teammate's changes(between `=======` and `>>>>>>>`). You job at this point is resolve this conflict by editing the file and make the appropriate changes. Modify the text to the following:
    ```
-   # The second Git lab
+   # The second git lab
    ## First team member: first name
    ## Second team member: second name
    This repository is an example of a C++ project.
@@ -60,9 +60,9 @@ You just experienced a conflict. A conflict happens when both collaborators edit
 
 13. `first`: Make sure `second` is done with the previous step then edit the `README.md` file by adding the following line (line 4) to `README.md`:
      ```markdown
-    Die class project. Simulates a die and includes a driver program and a Makefile. 
+    Die class project. It simulates a die and includes a driver program.
     ```
-    Add, commit, and push your changes to GitHub. Record the error as your Answer to Qustion 1.
+    Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
 14. `first`: Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
 15. `first`: Issue the command: `git pull`
 16. `first`: Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
@@ -79,25 +79,30 @@ You just experienced a conflict. A conflict happens when both collaborators edit
    # The second Git lab
    ## First team member: first name
    ## Second team member: second name
-   ### Die Project: simulates the rolling of a die with certain number of sides.
+   ### Die Project: simulates the rolling of a die with a specified number of sides.
    ```
 18. Add, commit, and push your changes to GitHub.
 19. `second`: Make sure `first` is done with the previous command and `git pull` the changes to your local repository.
     
 __At this point both teammates should have the same content on on their local repositories and on GitHub. Check the repositories contents before proceeding the next step.__
 
+----
+
 ## Branching & Pull Requests
-The main repository is called the `master` branch. Whe working with teams, you want to avoid working directly on the master branch. It is better to work on a copy of the repository and merge it with the master branch. First, you will work on your repository using a separate branch and merge it with the master. Second, we you will work on a separate branch and have your teammate review your changes before merging (`pull request`).
+The main repository is called the `master` branch. When working with teams, you want to avoid working directly on the master branch. It is desireable to work on a copy of the repository and later merge it with the master branch. First, you will work on your repository using a separate branch and merge it with the master. Second, we you will work on a separate branch and have your teammate review your changes before merging (`pull request`).
 
 ### Branching
+Branching is the process of copying the `master` branch of a repository into another branch with a different name. Braching allows you to work on the project without affecting the `master` branch. You can, later, merge your changes to the `master` branch.
+
 **The following steps must be done by `first`**
-1. List current branches by issuing the command `git branch`. Record the results as your `Answer to question 5`
+
+1. List current branches by issuing the command `git branch`. Record the results as your `Answer to question 3`
 2. Create a new branch and make it the current branch.
    ```console
    git branch header
    git checkout header
    ```
-   Or create a new branch and switch to it using the command:
+   Or create a new branch and switch to it using the single command:
    ```console
    git checkout -b header
    ```
@@ -105,16 +110,15 @@ The main repository is called the `master` branch. Whe working with teams, you w
    ```console
    git branch
    ```
-   Record the command output of `git branch` as your `Answer to question 6`
+   Record the command output of `git branch` as your `Answer to question 4`
    > Note: current branch is marked with __`*`__
 
-4. Now you are working with branch `header`. Add a file called `die.h`, add the following code, and save it.
+4. Now you are working with branch `header`. Add a file called `die.h` with the following content, and save it.
    ```cpp
    #ifndef DIE_H
    #define DIE_H
    #include <iostream>
    #include <fstream>
-
    using namespace std;
 
    class Die {
@@ -171,13 +175,13 @@ The main repository is called the `master` branch. Whe working with teams, you w
    #endif
    ```
 5. Add and commit the new file
-6. Issue the `ls` command and record all file names as your `Answer to question 6`.
+6. Issue the `ls` command and record all file names as your `Answer to question 5`.
 7. Swith back to the `master` branch:
    ```console
    git branch master
    ```
-8. Issue the `ls` command again and record all file names as your `Answer to question 7`.
-9. Is your header file in the `master` branch? Record your `Answer to question 7`
+8. Issue the `ls` command again and record all file names as your `Answer to question 6`.
+9.  Is your header file in the `master` branch? Record your `Answer to question 7`
 10. Let's merge the changes we made in the `header` branch into the `master` branch. First make sure you are in the master branch before merging.
 ```console
 git checkout master
@@ -186,9 +190,9 @@ git merge header
 11. Issue the `ls` command again. You should see `die.h` file in the repository directory.
 12. Push your changes to `GitHub`
 
-**The following steps must be done by both `second`**
+**The following steps must be done by `second`**
 
-Repeat the __Branching__ steps above `1-12`. Name your branch `imp` and add the file `die.cc` with the following content:
+Repeat the __Branching__ steps above `1-12`. Name your branch `implement` and add the file `die.cc` with the following content:
 ```cpp
 #include <iostream>
 #include <fstream>
@@ -242,22 +246,25 @@ ostream& operator <<(ostream &out, const Die &d){
     return out;
 }
 ```
+
 __Both teammates__: Make sure you have no conflicts and both of your changes are posted on GitHub. All local and online repositories should be synched at this point.
 
-The above workflow assumes does not work when your teammate's input is required to approve the changes. In other words, this workflow works best if you don't have a partner.
+The above workflow does not work when your teammate's input is required to approve the changes. In other words, this workflow works best if you don't have a partner.
 
 In the next section, we will addres another workflow where each partner has to approve and comment on changes made to the repository. This a more realistic approach to team work. We will do this using __pull requests__.
 
+----
+
 ### Pull Requests
 
-In this workflow, each team member will modify the code (using a separate branch) and ask the other team member to review it and merge it to the `master` branch. The process works by first creating a new branch, adding/modifying the code, uploading the branch to GitHub, and creating a `pull request`. A `pull request` is our way of saying: we made modifications that should be added to the software and would like the code to be pulled into the master branch. A `pull request` is then reviewed, discussed, and either rejected or merged into the `master` branch of the code. It is a bad idea to merge your own pull requests. Always, have someone else review it and merge it.
+In this workflow, each team member will modify the code (using a separate branch) and ask the other team member to review it and merge it to the `master` branch. The process works by first creating a new branch, adding/modifying the code, uploading the branch to GitHub, and creating a `pull request`. A `pull request` is our way of saying: we made modifications that should be added to the software and would like the code to be pulled into the master branch. A `pull request` is then reviewed, discussed, and either rejected or merged into the `master` branch. It is a bad idea to merge your own pull requests. Always, have someone else review it and merge it.
 
-This is a very common workflow for teams working on the same repository.
+This is a common workflow for teams working on the same repository.
 ![pull-request.jpg](pull-request.jpg)
 You can find more information about GitHub workflow [here](https://guides.github.com/introduction/flow/).
 
-`first`: 
-1. Open a terminal window and cd to your repository on your machine. Create a new branch and name it `driver`. You will create a driver program called `die-main.cc`. 
+`first`:
+1. Open a terminal window and move to your repository directory on your machine. Create a new branch and name it `driver`. You will create a driver program called `die-main.cc`. 
 2. Make sure that you are editing the `driver` branch by issuing the command `git branch`
 3. Add the following lines of code inside `die-main.cc`:
 ```cpp
@@ -286,17 +293,23 @@ int main() {
     return 0;
 }
 ```
+
 Add your name, date, and a brief description at the top of the program.
 
 4. Add and commit your changes. You should have a new branch with the new file added.
 5. Push your branch to GitHub.
 6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
+   !(pr-create.jpg)[pr-create.jpg]
+
+   !(pr-create2.jpg)[pr-create2.jpg]
+
+   !(pr-merge.jpg)[pr-merge.jpg]
+   
 7. Do not delete the branch when you're done.
 
-`second`: 
-
- Open a terminal window and cd to your repository on your machine. Create a new branch and name it `make`. You will create a file called `Makefile`. 
-1. Make sure that you are editing the `make` branch by issuing the command `git branch`
+`second`:
+ Open a terminal window and cd to your repository on your machine. Create a new branch and name it `makef`. You will create a file called `Makefile`. 
+1. Make sure you are editing the `makef` branch by issuing the command `git branch`
    
 2. Add the following lines of code inside `Makefile`:
    
@@ -347,6 +360,3 @@ __That's it. You just experienced the most common development workflow used toda
 ### Submission
 
 __Submit a link to your shared repository on GitHub.__
-
-
-
