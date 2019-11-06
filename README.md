@@ -301,7 +301,11 @@ Add your name, date, and a brief description at the top of the program.
 6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
    ![pr-create.jpg](pr-create.jpg)
 
+----
+
    ![pr-create2.jpg](pr-create2.jpg)
+
+----
 
    ![pr-merge.jpg](pr-merge.jpg)
 
