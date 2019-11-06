@@ -346,6 +346,8 @@ clean:
 7. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
 8. Do not delete the branch when you're done.
 
+----
+
 ### Workflow Summary:
 
 - Create a repository for every project
@@ -356,6 +358,8 @@ clean:
 - Have a team member (other than the author) merge the pull request
 
 __That's it. You just experienced the most common development workflow used today.__
+
+----
 
 ### Submission
 
