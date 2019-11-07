@@ -3,9 +3,18 @@
 
 ----
 
-**You must complete the [first lab](https://github.com/2400/git-lab) prior to attempting this lab.**
+**You must complete the [first lab](https://github.com/2400/git-lab) prior to attempting this one. If you don't have a GitHub account, visit [GitHub for Students](https://education.github.com/students) to sign up. Make sure you use your school email to get the student's benefits.**
 
 ----
+
+## Credentials
+
+Make sure you configure your user name and email in `git`. Your credentials will be used in `git` history. Verify your user name and email by issuing the command `git config --list`. If your name and email are not shown in the list, execute the following commands to configure them.
+
+```console
+git config --global user.name "Enter your name here"
+git config --global user.email "Enter your school email here"
+```
 
 ## Conflicts
 
