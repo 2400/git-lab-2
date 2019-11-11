@@ -7,6 +7,18 @@
 **You must complete the [first lab](https://github.com/2400/git-lab) prior to attempting this one. If you don't have a GitHub account, visit [GitHub for Students](https://education.github.com/students) to sign up. Make sure you use your school email to get the student's benefits.**
 
 ----
+
+## Credentials
+
+Make sure you configure your user name and email in `git`. Your credentials will be used in `git` history. Verify your user name and email by issuing the command `git config --list`. If your name and email are not shown in the list, execute the following commands to configure them.
+
+```console
+git config --global user.name "Enter your name here"
+git config --global user.email "Enter your school email here"
+```
+
+----
+
 ## Resetting Files/Commits
 
 One of the most important features of git is its ability to recover older versions of files or repositories. Git keeps track of the repository history through its commits. Each commit is identified by a unique hexadecimal id/hash number (example: `e72f52ae4336d16d1affef8a0dc5162039022db2`). To see all commit history, execute the command `git log`. You should see something similar to the following:
@@ -68,15 +80,6 @@ __Both team members__:
 
 - Verify that the file has been restored.
 
-
-## Credentials
-
-Make sure you configure your user name and email in `git`. Your credentials will be used in `git` history. Verify your user name and email by issuing the command `git config --list`. If your name and email are not shown in the list, execute the following commands to configure them.
-
-```console
-git config --global user.name "Enter your name here"
-git config --global user.email "Enter your school email here"
-```
 
 ## Conflicts
 
