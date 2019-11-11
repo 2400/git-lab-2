@@ -45,7 +45,6 @@ Date:   Fri Nov 8 21:35:16 2019 -0500
 
 The id is generally used to revert your repository to a previous state. Additionally, they can be used to recover a single file instead. Let's try some of these commands.
 
-__Both team members__:
 
 #### Resetting a Commit
 
@@ -80,7 +79,6 @@ __Both team members__:
 
 - Verify that the file has been restored.
 
-
 ## Conflicts
 
 In the previous lab, we discussed editing the same file online and in your local repository. This simulates having two people editing the same file/repository.  At some point, conflicts may occur. Conflicts occur when two developers edit the same content (same lines of code).
@@ -92,6 +90,7 @@ __Both team members__:
 You will be working on files in the same repository to practice resolving conflicts. You will be createing a `die class` project that includes a class header, a class implementation, a driver, and a Makefile. The `Die` class will simulates an `n-sided` die.
 
 1. `first`: Create a repository on GitHub called `die-class` with a `README.md` and a `.gitignore` file for C++.
+   > A `.gitignore` file lists all the files that you don't want to include in a repository. For example, the executable file `a.out`.
 2. Add `second` team member as a collaborator. You will need their GitHub user name.
 3. Both team members: Clone `die-class` repository on your system. You will be recording your answers in `first-answers.md` and `second-answers.md`.
    
@@ -109,7 +108,7 @@ You will be working on files in the same repository to practice resolving confli
    # The second Git Lab
    ## Second team member: <Enter your name here>
    ```
-9. `second`: Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
+9.  `second`: Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
 Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
 10. `second:` Issue the command: `git pull`
 11. `second:` Issue the `git push` command again. Was there a conflict reported?Copy the output of the command as your `Answer to question 2`. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
