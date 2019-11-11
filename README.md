@@ -19,7 +19,7 @@ git config --global user.email "Enter your school email here"
 
 ----
 
-## Resetting Files/Commits
+## Undoing Changes (Files/Commits)
 
 One of the most important features of git is its ability to recover older versions of files or repositories. Git keeps track of the repository history through its commits. Each commit is identified by a unique hexadecimal id/hash number (example: `e72f52ae4336d16d1affef8a0dc5162039022db2`). To see all commit history, execute the command `git log`. You should see something similar to the following:
 
@@ -46,7 +46,7 @@ Date:   Fri Nov 8 21:35:16 2019 -0500
 The id is generally used to revert your repository to a previous state. Additionally, they can be used to recover a single file instead. Let's try some of these commands.
 
 
-#### Resetting a Commit
+#### Revert to a Previous Commit
 
 - Add another file to your repository and add some text to it and save it.
 - Issue the `ls` command to make sure your file is listed.
@@ -63,7 +63,7 @@ The id is generally used to revert your repository to a previous state. Addition
     ```
 - Issue the `git log` again and you should only see a single commit.
 
-#### Resetting a single file
+#### Undo Changes to a Single File
 
 - Edit the `README.md` file and add a couple of lines text. 
 - Add and commit your changes
