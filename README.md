@@ -334,7 +334,7 @@ In the next section, we will addres another workflow where each partner has to a
 In this workflow, each team member will modify the code (using a separate branch) and ask the other team member to review it and merge it to the `master` branch. The process works by first creating a new branch, adding/modifying the code, uploading the branch to GitHub, and creating a `pull request`. A `pull request` is our way of saying: we made modifications that should be added to the software and would like the code to be pulled into the master branch. A `pull request` is then reviewed, discussed, and either rejected or merged into the `master` branch. It is a bad idea to merge your own pull requests. Always, have someone else review it and merge it.
 
 This is a common workflow for teams working on the same repository.
-![pull-request.jpg](pull-request.jpg)
+![pull-request.jpg](img/pull-request.jpg)
 You can find more information about GitHub workflow [here](https://guides.github.com/introduction/flow/).
 
 `first`:
@@ -373,15 +373,15 @@ Add your name, date, and a brief description at the top of the program.
 4. Add and commit your changes. You should have a new branch with the new file added.
 5. Push your branch to GitHub.
 6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
-   ![pr-create.jpg](pr-create.jpg)
+   ![pr-create.jpg](img/pr-create.jpg)
 
 ----
 
-   ![pr-create2.jpg](pr-create2.jpg)
+   ![pr-create2.jpg](img/pr-create2.jpg)
 
 ----
 
-   ![pr-merge.jpg](pr-merge.jpg)
+   ![pr-merge.jpg](img/pr-merge.jpg)
 
 7. Do not delete the branch when you're done.
 
