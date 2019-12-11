@@ -22,7 +22,7 @@ git config --global user.email "Enter your school email here"
 
 ## Conflicts
 
-In the previous lab, we discussed editing the same file online and in your local repository. This simulates having two people editing the same file/repository.  At some point, conflicts may occur. Conflicts occur when two developers edit the same content (same lines of code).
+In the previous lab, we discussed editing the same file online and in your local repository which simulated having two people editing the same file.  Conflicts occur when two developers edit the same content (same lines of code in the same file).
 
 From this point on, you will be working with a partner. Both of you will be working on the same repository. You will be referred to as `first` and `second` team member.
 
