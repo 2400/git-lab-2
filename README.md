@@ -253,7 +253,7 @@ Branching is the process of copying the `master` branch of a repository into ano
 6. Issue the `ls` command and record all file names as your `Answer to question 5`.
 7. Swith back to the `master` branch:
    ```console
-   git branch master
+   git checkout master
    ```
 8. Issue the `ls` command again and record all file names as your `Answer to question 6`.
 9.  Is your header file in the `master` branch? Record your `Answer to question 7`
