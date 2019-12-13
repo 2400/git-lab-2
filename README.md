@@ -284,7 +284,7 @@ Die::Die(){ //default 6 sides
 }
 
 Die::Die(int newNumSides){
-    if (newNumSides > 0) {
+    if (newNumSides > 1) {
         numSides = newNumSides;
 
     }
@@ -297,7 +297,7 @@ Die::Die(int newNumSides){
 
 //setters
 void Die::setNumSides(int newNumSides){
-    if (newNumSides > 0) {
+    if (newNumSides > 1) {
         numSides = newNumSides;
     }
 }
