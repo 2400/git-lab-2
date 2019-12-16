@@ -52,7 +52,7 @@ You will be working on files in the same repository to practice resolving confli
 9.  `second`: Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
 Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
 10. `second:` Issue the command: `git pull`
-11. `second:` Issue the `git push` command again. Was there a conflict reported?Copy the output of the command as your `Answer to question 2`. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
+11. `second:` Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
 
 12. `second`: Open the `README.md` file in your favorite editor. You should see something similar to the following:
    ```markdown
@@ -62,7 +62,7 @@ Git is telling you the online version is different from the local version of the
    <your partner's changes here>
    >>>>>>> a10ec650cc73b85f41e37559df7fc6cb3affcac6
    ```
-   Git separates your changes (between `<<<<<<< HEAD` and `=======`) from your teammate's changes(between `=======` and `>>>>>>>`). You job at this point is resolve this conflict by editing the file and make the appropriate changes. Modify the text to the following:
+   Git separates your changes (between `<<<<<<< HEAD` and `=======`) from your teammate's changes (between `=======` and `>>>>>>>`). You job at this point is resolve this conflict by editing the file and make the appropriate changes. Modify the text to the following:
    ```
    # The second git lab
    ## First team member: first name
@@ -103,6 +103,8 @@ __At this point both teammates should have the same content on on their local re
 ----
 ## Undoing Changes (Files/Commits)
 
+Each team member will complete the following section independently.
+
 One of the most important features of git is its ability to recover older versions of files or repositories. Git keeps track of the repository history through its commits. Each commit is identified by a unique hexadecimal id/hash number (example: `e72f52ae4336d16d1affef8a0dc5162039022db2`). To see all commit history, execute the command `git log`. You should see something similar to the following:
 
 ```console
@@ -133,7 +135,7 @@ The id is generally used to revert your repository to a previous state. Addition
 - Add another file to your repository and add some text to it and save it.
 - Issue the `ls` command to make sure your file is listed.
 - Add and commit your changes
-- Issue the `git log`. You should see two commits (latest on top)
+- Issue the `git log`. You should see your commits (latest on top)
 - Let's say you changed your mind and you want to revert to the previous commit
   - Copy the id of the second commit in the list and use it in the following command. You can just copy the first 7-8 characters.
     ```console
@@ -143,7 +145,7 @@ The id is generally used to revert your repository to a previous state. Addition
     ```console
     git reset --hard <id>
     ```
-- Issue the `git log` again and you should only see a single commit.
+- Issue the `git log` again and the previous commit should no longer be present.
 
 #### Undo Changes to a Single File
 
@@ -164,6 +166,9 @@ The id is generally used to revert your repository to a previous state. Addition
 ---- 
 
 ## Branching & Pull Requests
+
+When both team members have finished the above section, you may begin this section.
+
 The main repository is called the `master` branch. When working with teams, you want to avoid working directly on the master branch. It is desireable to work on a copy of the repository and later merge it with the master branch. First, you will work on your repository using a separate branch and merge it with the master. Second, we you will work on a separate branch and have your teammate review your changes before merging (`pull request`).
 
 ### Branching
@@ -171,7 +176,7 @@ Branching is the process of copying the `master` branch of a repository into ano
 
 **The following steps must be done by `first`**
 
-1. List current branches by issuing the command `git branch`. Record the results as your `Answer to question 3`
+1. List current branches by issuing the command `git branch` (you can exit this view by pressing `q`). Record the results as your `Answer to question 3`
 2. Create a new branch and make it the current branch.
    ```console
    git branch header
@@ -251,7 +256,7 @@ Branching is the process of copying the `master` branch of a repository into ano
    ```
 5. Add and commit the new file
 6. Issue the `ls` command and record all file names as your `Answer to question 5`.
-7. Swith back to the `master` branch:
+7. Switch back to the `master` branch:
    ```console
    git checkout master
    ```
