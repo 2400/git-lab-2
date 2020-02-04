@@ -32,7 +32,7 @@ You will be working on files in the same repository to practice resolving confli
 
 1. `first`: Create a repository on GitHub called `die-class` with a `README.md` and a `.gitignore` file for C++.
    > A `.gitignore` file lists all the files that you don't want to include in a repository. For example, the executable file `a.out`.
-2. Add `second` team member as a collaborator. You will need their GitHub user name.
+2. Add `second` team member as a collaborator. You will need their GitHub user name. Click on the repository `Settings > Collaborators`.
 3. Both team members: Clone `die-class` repository on your system. You will be recording your answers in `first-answers.md` and `second-answers.md`.
    
 4. `first`: Create your answers file `first-answers.md`, add, and commit it.
@@ -51,10 +51,9 @@ You will be working on files in the same repository to practice resolving confli
    ```
 9.  `second`: Add, commit, and push your changes to GitHub. Record the error as your `Answer to Qustion 1`.
 Git is telling you the online version is different from the local version of the repository. You need to `pull` the changes to your local repositories.
-10. `second:` Issue the command: `git pull`
-11. `second:` Issue the `git push` command again. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
+10. `second:` Issue the command: `git pull`. Was there a conflict reported? Copy the output of the command as your `Answer to question 2`. You just experienced a conflict. A conflict happens when both collaborators edit the same lines in the code.
 
-12. `second`: Open the `README.md` file in your favorite editor. You should see something similar to the following:
+11. `second`: Open the `README.md` file in your favorite editor. You should see something similar to the following:
    ```markdown
    <<<<<<< HEAD
    <your changes here>
@@ -377,7 +376,7 @@ int main() {
 Add your name, date, and a brief description at the top of the program.
 
 4. Add and commit your changes. You should have a new branch with the new file added.
-5. Push your branch to GitHub.
+5. Push your branch to GitHub. Try the command `git push` first. You should see a corrected command in the error message. This is required the first time you push a new branch.
 6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
    ![pr-create.jpg](img/pr-create.jpg)
 
@@ -393,9 +392,11 @@ Add your name, date, and a brief description at the top of the program.
 
 `second`:
  Open a terminal window and cd to your repository on your machine. Create a new branch and name it `makef`. You will create a file called `Makefile`. 
-1. Make sure you are editing the `makef` branch by issuing the command `git branch`
+1. Issue the command `git pull` to make sure you have the latest branch of the repository.
    
-2. Add the following lines of code inside `Makefile`:
+2. Make sure you are editing the `makef` branch by issuing the command `git branch`.
+   
+3. Add the following lines of code inside `Makefile`:
    
 ```Makefile
 # Author: <Enter your name>
@@ -410,7 +411,7 @@ CC = g++
 #Linking all the files
 #Create the executable program "die-main"
 die-main: die-main.o die.o
-	$(CC) $(CFLAGS) die.o die-main.o -o die-main
+	$(CC) $(CFLAGS) die.o die-main.o
 
 die.o: die.cc die.h
 	$(CC) -c $(CFLAGS) die.cc
@@ -424,7 +425,7 @@ clean:
 ```
 
 3. Add your name and date at the top of the program.
-4. Test your program by running the `make` command and running `a.out`.
+4. Test your program by running the `make` command and running `./a.out`.
 5. Add and commit your changes. You should have a new branch with the new file added.
 6. Push your branch to GitHub.
 7. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
