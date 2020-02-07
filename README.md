@@ -409,8 +409,8 @@ Add your name, date, and a brief description at the top of the program.
 CFLAGS = -Wall -std=c++11
 CC = g++
 #Linking all the files
-#Create the executable program "die-main"
-die-main: die-main.o die.o
+#Create the executable program "a.out"
+a.out: die-main.o die.o
 	$(CC) $(CFLAGS) die.o die-main.o
 
 die.o: die.cc die.h
@@ -421,13 +421,14 @@ die-main.o: die-main.cc die.h
 
 # remove all the object and executable files
 clean:
-	rm -f die-main.o die.o die-main
+	rm -f die-main.o die.o die-main a.out
 ```
 
 3. Add your name and date at the top of the program.
 4. Test your program by running the `make` command and running `./a.out`.
 5. Add and commit your changes. You should have a new branch with the new file added.
-6. Push your branch to GitHub.
+6. Push your branch to GitHub. `git push -u origin makef`
+   
 7. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
 8. Do not delete the branch when you're done.
 
