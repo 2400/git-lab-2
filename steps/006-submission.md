@@ -1,4 +1,4 @@
-[⬅ Pull Requests](005-pull-requests.md)
+[⏪ Pull Requests](005-pull-requests.md)
 
 ### Workflow Summary:
 
@@ -17,4 +17,4 @@
 
 **Submit a link to your shared repository on GitHub.**
 
-[⬅ Pull Requests](005-pull-requests.md)
+[⏪ Pull Requests](005-pull-requests.md)

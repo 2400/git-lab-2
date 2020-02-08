@@ -1,4 +1,4 @@
-[⬅ Conflicts](001-conflicts.md) | [Branching & Pull Request Overview ⮕](003-branching-and-pr.md)
+[⏪ Conflicts](001-conflicts.md) | [Branching & Pull Request Overview ⏩](003-branching-and-pr.md)
 
 ## Undoing Changes (Files/Commits)
 
@@ -63,4 +63,4 @@ The id is generally used to revert your repository to a previous state. Addition
 
 - Verify that the file has been restored.
 
-[⬅ Conflicts](001-conflicts.md) | [Branching & Pull Request Overview ⮕](003-branching-and-pr.md)
+[⏪ Conflicts](001-conflicts.md) | [Branching & Pull Request Overview ⏩](003-branching-and-pr.md)
