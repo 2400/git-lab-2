@@ -376,7 +376,7 @@ int main() {
 Add your name, date, and a brief description at the top of the program.
 
 4. Add and commit your changes. You should have a new branch with the new file added.
-5. Push your branch to GitHub. Try the command `git push` first. You should see a corrected command in the error message. This is required the first time you push a new branch.
+5. Push your branch to GitHub. Try the command `git push` first. You should see a corrected command in the error message. This recommended command is required the first time you push a new branch.
 6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
    ![pr-create.jpg](img/pr-create.jpg)
 
@@ -427,7 +427,7 @@ clean:
 3. Add your name and date at the top of the program.
 4. Test your program by running the `make` command and running `./a.out`.
 5. Add and commit your changes. You should have a new branch with the new file added.
-6. Push your branch to GitHub. `git push -u origin makef`
+6. Push your branch to GitHub. Try the command `git push` first. You should see a corrected command in the error message. This recommended command is required the first time you push a new branch.
    
 7. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
 8. Do not delete the branch when you're done.
