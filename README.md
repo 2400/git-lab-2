@@ -6,7 +6,7 @@
 
 ---
 
-**You must complete the [first lab](https://github.com/2400/git-lab) prior to attempting this one. If you don't have a GitHub account, visit [GitHub for Students](https://education.github.com/students) to sign up. Make sure you use your school email to get the student's benefits.**
+**You must complete the [first lab](https://github.com/24steps/00/git-lab) prior to attempting this one. If you don't have a GitHub account, visit [GitHub for Students](https://education.github.com/students) to sign up. Make sure you use your school email to get the student's benefits.**
 
 ---
 
@@ -23,9 +23,9 @@ git config --global user.email "Enter your school email here"
 
 ## Steps to Complete
 
-1. [Conflicts](001-conflicts.md)
-2. [Undoing](002-undoing.md)
-3. [Branching and Pull Requests](003-branching-and-pr.md)
-   - [Branching](004-conflicts.md)
-   - [Pull Requests](005-pull-requests.md)
-4. [Submission](006-submission.md)
+1. [Conflicts](steps/001-conflicts.md)
+2. [Undoing](steps/002-undoing.md)
+3. [Branching and Pull Requests](steps/003-branching-and-pr.md)
+   - [Branching](steps/004-conflicts.md)
+   - [Pull Requests](steps/005-pull-requests.md)
+4. [Submission](steps/006-submission.md)
