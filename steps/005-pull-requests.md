@@ -46,15 +46,15 @@ Add your name, date, and a brief description at the top of the program.
 4. Add and commit your changes. You should have a new branch with the new file added.
 5. Push your branch to GitHub. Try the command `git push` first. You should see a corrected command in the error message. This recommended command is required the first time you push a new branch.
 6. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
-   ![pr-create.jpg](img/pr-create.jpg)
+   ![pr-create.jpg](../img/pr-create.jpg)
 
 ---
 
-![pr-create2.jpg](img/pr-create2.jpg)
+![pr-create2.jpg](../img/pr-create2.jpg)
 
 ---
 
-![pr-merge.jpg](img/pr-merge.jpg)
+![pr-merge.jpg](../img/pr-merge.jpg)
 
 7. Do not delete the branch when you're done.
 
