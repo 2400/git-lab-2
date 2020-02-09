@@ -26,6 +26,6 @@ git config --global user.email "Enter your school email here"
 1. [Conflicts](steps/001-conflicts.md)
 2. [Undoing](steps/002-undoing.md)
 3. [Branching and Pull Requests](steps/003-branching-and-pr.md)
-   - [Branching](steps/004-conflicts.md)
+   - [Branching](steps/004-branching.md)
    - [Pull Requests](steps/005-pull-requests.md)
 4. [Submission](steps/006-submission.md)
