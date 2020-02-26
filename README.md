@@ -2,7 +2,9 @@
 
 ### Prepared by: Nasseef Abukamail (abukamai@ohio.edu)
 
-#### November 2019
+#### February 2020
+
+Thanks to Tim Steinberger, Kristen Masada, and Daniel Abdelsamed for their valuable input.
 
 ---
 
