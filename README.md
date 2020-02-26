@@ -29,6 +29,8 @@ git config --global user.email "Enter your school email here"
    - [Branching](steps/004-branching.md)
    - [Pull Requests](steps/005-pull-requests.md)
 
+---
+
 ### Workflow Summary:
 
 - Create a repository for every project
