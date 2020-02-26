@@ -8,7 +8,7 @@ Thanks to Tim Steinberger, Kristen Masada, and Daniel Abdelsamed for their valua
 
 ---
 
-**You must complete the [first lab](https://github.com/24steps/00/git-lab) prior to attempting this one. If you don't have a GitHub account, visit [GitHub for Students](https://education.github.com/students) to sign up. Make sure you use your school email to get the student's benefits.**
+**You must complete the [first lab](https://github.com/2400/git-lab) prior to attempting this one. If you don't have a GitHub account, visit [GitHub for Students](https://education.github.com/students) to sign up. Make sure you use your school email to get the student's benefits.**
 
 ---
 
