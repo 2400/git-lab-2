@@ -1,4 +1,4 @@
-[⏪ Branching ](004-branching.md) | [Submission ⏩](006-submission.md)
+[⏪ Branching ](004-branching.md) 
 
 ### Pull Requests
 
@@ -101,4 +101,4 @@ clean:
 7. Go to GitHub and create a pull request for your branch. Leave a comment to your partner to review it, comment on it, and merge it to the `master` branch.
 8. Do not delete the branch when you're done.
 
-[⏪ Branching ](004-branching.md) | [Submission ⏩](006-submission.md)
+[⏪ Branching ](004-branching.md)
