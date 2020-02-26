@@ -1,4 +1,4 @@
-[Undoing ⏩](002-undoing.md)
+[Undoing Changes ⏩](002-undoing.md)
 
 ## Conflicts
 
@@ -88,4 +88,4 @@ Git separates your changes (between `<<<<<<< HEAD` and `=======`) from your team
 
 **At this point both teammates should have the same content on on their local repositories and on GitHub. Check the repositories contents before proceeding the next step.**
 
-[Undoing ⏩](002-undoing.md)
+[Undoing Changes ⏩](002-undoing.md)
